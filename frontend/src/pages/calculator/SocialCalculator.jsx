@@ -1,5 +1,6 @@
-import React from 'react'
+import React from "react";
 import "./socialcalculator.css";
+import { Formik } from "formik";
 
 const SocialCalculator = () => {
   return (
@@ -14,7 +15,9 @@ const SocialCalculator = () => {
             <nav className="navbar navbar-light fixed-top">
               <div className="container-fluid">
                 <div className="navbar-brand" style={{ color: "white" }}>
-                  <h1 className="Derechos-title">Calculadora social</h1>
+                  <h1 className="Derechos-title">
+                    Calculadora de prestaciones sociales
+                  </h1>
                 </div>
                 <button
                   className="navbar-toggler"
@@ -33,7 +36,7 @@ const SocialCalculator = () => {
                   aria-labelledby="offcanvasNavbarLabel"
                 >
                   <div className="offcanvas-header">
-                    <img src="imagenes/workers (1).png" alt="logo" />
+                    <img src="" alt="logo" />
                     <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
                       Trabaja Decente
                     </h5>
@@ -72,7 +75,7 @@ const SocialCalculator = () => {
                           href="derecho.html"
                         >
                           <img
-                            src="imagenes/laws.png"
+                            src="/assets/img/legal.png"
                             alt="derechos"
                             width={50}
                             height={44}
@@ -114,27 +117,16 @@ const SocialCalculator = () => {
                         <a
                           style={{ color: "white" }}
                           className="nav-link"
-                          href="calculadora.html"
+                          href="profile"
                         >
                           <i
                             className="fas fa-calculator"
                             style={{ fontSize: "45px", marginRight: "9px" }}
                           />
-                          Calculadoras
+                          Mi perfil
                         </a>
                       </li>
                     </ul>
-                    <form className="d-flex">
-                      <input
-                        className="form-control me-2"
-                        type="search"
-                        placeholder="Search"
-                        aria-label="Search"
-                      />
-                      <button className="btn align-text-center" type="submit">
-                        Search
-                      </button>
-                    </form>
                   </div>
                 </div>
               </div>
@@ -144,52 +136,197 @@ const SocialCalculator = () => {
         </div>
       </header>
       {/* parrafo explicativo */}
+
       <div className="container m-4">
         <div className="container">
-          <form action="action_page.php">
-            <label htmlFor="name">Salario</label>
+          <Formik
+            initialValues={{
+              salario: "",
+              meses: "",
+              resultado: "",
+            }}
+            validate={(valores) => {
+              let errores = {};
 
-            <input
-              type="number"
-              id="name"
-              name="name"
-              placeholder="Ej. 930"
-              // onChange={(event) => setName(event.currentTarget.value)}
-            />
-            <label htmlFor="lastname">Fecha de ingreso</label>
-            <input
-              type="date"
-              id="ingreso"
-              name="lastname"
-              // onChange={(event) => setLastname(event.currentTarget.value)}
-            />
-            <label htmlFor="email">Fecha de salida</label>
-            <input
-              type="date"
-              id="email"
-              name="email"
-              placeholder="example@gmail.com"
-            />
-            <label htmlFor="call">Motivo de cese</label>
-                      <select name="Cese">
-                          <option value="voluntaria">Renuncia Voluntaria</option>
-                          <option value="Despido">Despido Involuntario</option>
-            </select>
-            <label htmlFor="subject">Consulta</label>
-            <textarea
-              id="subject"
-              name="subject"
-              placeholder="Escribe algo.."
-              style={{ height: "200px" }}
-              defaultValue={""}
-            />
-            <button
-              className="boton-register p-2"
-              onClick={console.log("Hola mundo")}
-            >
-              Enviar
-            </button>
-          </form>
+              if (valores.meses < 0) {
+                errores.meses = "Los meses no pueden ser un numero negativo";
+              }
+
+              if (valores.salario < 0) {
+                errores.salario = "El salario no puede ser un número negativo";
+              }
+
+              return errores;
+            }}
+            onSubmit={(valores) => {
+              let formulaCTS = () => {
+                let mesesADias = valores.meses * 30;
+                let x = valores.salario;
+                let formula = (x / 360) * mesesADias;
+                valores.resultado = formula;
+                return formula;
+              };
+
+              console.log(formulaCTS());
+            }}
+          >
+            {({ values, errors, handleSubmit, handleChange, handleBlur }) => (
+              <form className="calculadora-form" onSubmit={handleSubmit}>
+                {console.log(errors)}
+                <h3>
+                  Cálculo de la Gratificación en la liquidación de beneficios
+                  sociales al término de la relación laboral
+                </h3>
+                <div>
+                  <label htmlFor="salario">Salario</label>
+
+                  <input
+                    type="number"
+                    id="salario"
+                    name="salario"
+                    placeholder="Ej. 930"
+                    value={values.salario}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    className="form-control"
+                    // onChange={(event) => setName(event.currentTarget.value)}
+                  />
+                  {errors.salario && (
+                    <div className="error">{errors.salario}</div>
+                  )}
+                </div>
+                <div className="form-group">
+                  <label htmlFor="meses">Numero de meses</label>
+                  <input
+                    type="number"
+                    id="meses"
+                    name="meses"
+                    value={values.meses}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    className="form-control"
+                    // onChange={(event) => setLastname(event.currentTarget.value)}
+                  />
+                  {errors.meses && <div className="error">{errors.meses}</div>}
+                </div>
+                <div className="form-group">
+                  <label htmlFor="resultado">Resultado</label>
+                  <input
+                    type="number"
+                    id="resultado"
+                    name="resultado"
+                    value={values.resultado}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    className="form-control"
+                    disabled={true}
+                  />
+                </div>
+                {errors.salida && <div className="error">{errors.salida}</div>}
+                {/* <div>
+                  <label htmlFor="motivo">Motivo de cese</label>
+                  <select name="cese">
+                    <option value="voluntaria">Renuncia Voluntaria</option>
+                    <option value="Despido">Despido Involuntario</option>
+                  </select>
+                </div> */}
+                <button type="submit" className="boton-register p-2 btn-sub">
+                  Calcular
+                </button>
+              </form>
+            )}
+          </Formik>
+
+          <Formik
+            initialValues={{
+              salario: "",
+              ingreso: "",
+              salida: "",
+            }}
+            validate={(valores) => {
+              let errores = {};
+
+              if (valores.salida < valores.ingreso) {
+                errores.salida =
+                  "la fecha de salida no puede ser menor que la de entrada";
+              }
+
+              if (valores.salario < 0) {
+                errores.salario = "El salario no puede ser un número negativo";
+              }
+
+              return errores;
+            }}
+            onSubmit={(valores) => {
+              console.log(valores.salida);
+              console.log("Formulario enviado");
+            }}
+          >
+            {({ values, errors, handleSubmit, handleChange, handleBlur }) => (
+              <form className="calculadora-form" onSubmit={handleSubmit}>
+                {console.log(errors)}
+                <h3>
+                  Calculo del CTS en la liquidación de beneficios sociales al
+                  termino de la relación laboral
+                </h3>
+                <div>
+                  <label htmlFor="salario">Salario</label>
+
+                  <input
+                    type="number"
+                    id="salario"
+                    name="salario"
+                    placeholder="Ej. 930"
+                    value={values.salario}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    className="form-control"
+                    // onChange={(event) => setName(event.currentTarget.value)}
+                  />
+                  {errors.salario && (
+                    <div className="error">{errors.salario}</div>
+                  )}
+                </div>
+                <div className="form-group">
+                  <label htmlFor="meses">Numero de meses</label>
+                  <input
+                    type="number"
+                    id="meses"
+                    name="meses"
+                    value={values.meses}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    className="form-control"
+                    // onChange={(event) => setLastname(event.currentTarget.value)}
+                  />
+                </div>
+                <div className="form-group">
+                  <label htmlFor="resultado">Resultado</label>
+                  <input
+                    type="number"
+                    id="resultado"
+                    name="resultado"
+                    value={values.salida}
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    className="form-control"
+                    disabled={true}
+                  />
+                </div>
+                {errors.salida && <div className="error">{errors.salida}</div>}
+                {/* <div>
+                  <label htmlFor="motivo">Motivo de cese</label>
+                  <select name="cese">
+                    <option value="voluntaria">Renuncia Voluntaria</option>
+                    <option value="Despido">Despido Involuntario</option>
+                  </select>
+                </div> */}
+                <button type="submit" className="boton-register p-2 btn-sub">
+                  Calcular
+                </button>
+              </form>
+            )}
+          </Formik>
         </div>
       </div>
       {/* acordeones */}
@@ -210,7 +347,7 @@ const SocialCalculator = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default SocialCalculator
+export default SocialCalculator;

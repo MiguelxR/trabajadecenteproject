@@ -1,3 +1,7 @@
+.container {
+  height: 800px;
+}
+
 input[type="text"],
 select,
 textarea {
@@ -7,8 +11,9 @@ textarea {
   border-radius: 4px; /* Rounded borders */
   box-sizing: border-box; /* Make sure that padding and width stays in place */
   margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
+  margin-bottom: 50px; /* Bottom margin */
   resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+  height: 80px;
 }
 
 /* Style the submit button with a specific background color etc */
@@ -24,4 +29,17 @@ input[type="submit"] {
 /* When moving the mouse over the submit button, add a darker green color */
 input[type="submit"]:hover {
   background-color: #2b8bb1;
+}
+
+.btn-sub {
+  margin-top: 50px;
+}
+
+.Derechos-title {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.calculadora-form {
+  margin-top: 60px;
 }
