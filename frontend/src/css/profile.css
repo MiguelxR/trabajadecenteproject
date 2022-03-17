@@ -1,0 +1,31 @@
+/* Start Profile */
+.perfil {
+  position: absolute;
+  top: 125px;
+  bottom: 0;
+  right: 0;
+  width: 80vw;
+  height: 100%;
+}
+.color-base {
+  background-color: #070d18;
+}
+.iconos-perfil {
+  font-size: 42px;
+}
+.boton-trabajos {
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  transition: all 600ms;
+}
+.boton-trabajos:hover {
+  transition: all 600ms;
+  color: #070d18;
+  background-color: #42bdec;
+}
+
+.color-datos {
+  color: #42bdec;
+}
+/* End Profile */

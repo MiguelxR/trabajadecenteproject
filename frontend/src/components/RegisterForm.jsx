@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import seguridadAPI from "../utils/seguridadAPI";
 // import localAPI from "../utils/localAPI";
-
+import "../css/Register-Login.css";
+import { dinamicTitle } from "../utils/dinamicTitle";
 const RegisterForm = () => {
+  dinamicTitle("SignUp");
   const [usuario, setUsuario] = useState("");
   const [nombre, setNombre] = useState("");
   const [telefono, setTelefono] = useState("");

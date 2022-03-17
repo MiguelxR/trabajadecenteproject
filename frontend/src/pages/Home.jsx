@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "../css/home.css";
+import { dinamicTitle } from "../utils/dinamicTitle";
 const Home = () => {
+  dinamicTitle("Home");
   return (
     <div>
       {/* <!-- section 1 --> */}
@@ -115,48 +117,62 @@ const Home = () => {
       <div className="decoration"></div>
       {/* <!-- section 2 --> */}
       <div className="section-2 d-flex flex-column justify-content-center align-items-center px-5">
-        <div>
-          <h2 className="text-center title-section2">Desafío</h2>
-          <p className="text-section-2">
+        <div className="d-flex flex-column justify-content-center align-items-center">
+          <h2 className="title-section2 text-center mb-4" data-aos="fade-left">
+            Desafío
+          </h2>
+          <p className="text-section-2 text-center" data-aos="fade-left">
             La pandemia del covid-19 a afectado de manera negativa el
             crecimiento económico del Perú y a impulsado el desempleo, la
             informalidad y la precarización laboral. Es por ello que la
             Organización de las Naciones Unidas (ONU), mediante los Objetivos de
             Desarrollo Sostenible, propone como indispensable para el desarrollo
-            inclusivo y sostenible de toda la sociedad, el objetivo numero 8:
+            inclusivo y sostenible de toda la sociedad, el objetivo numero 8:{" "}
+            <br />
             <strong> el trabajo decente.</strong>
           </p>
           <br />
         </div>
 
         <div className="d-flex justify-content-evenly section2">
-          <div className="section2-a"></div>
           <img
             src="http://www.conexihon.hn/images/Maquila-hondurea-2.jpg"
+            alt="Cargando"
             className="img-desafio"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
           />
+
           <img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbRQ11FL0edPx6FgcmAhwrpugxPpG19QI-Uk2FMuz40_GRNEFDMY47zVeOhoWBoTTNtE8&usqp=CAU"
-            className="img-desafio2"
+            alt="Cargando"
+            className="img-desafio"
+            data-aos="zoom-in"
+            data-aos-duration="2500"
           />
           <img
             src="https://billieparkernoticias.com/wp-content/uploads/2021/07/Noticia3.jpg"
+            alt="Cargando"
             className="img-desafio"
+            data-aos="zoom-in"
+            data-aos-duration="3000"
           />
-          <p className="text2-section2">
-            La informalidad laboral es uno de los principales problemas
-            socioeconómicos del Perú y es el causante de perpetuar la
-            precarización, la explotación y discriminación, lamentablemente en
-            el año 2021 se ha profundizado esta problemática en el país.
-          </p>
-          <div className="section2-b d-flex justify-content-center align-items-center"></div>
+          {/* <div className="section2-b d-flex justify-content-center align-items-center"></div> */}
         </div>
+        <p className="text2-section2 text-center mt-5" data-aos="fade-left">
+          La informalidad laboral es uno de los principales problemas
+          socioeconómicos del Perú y es el causante de perpetuar la
+          precarización, la explotación y discriminación, lamentablemente en el
+          año 2021 se ha profundizado esta problemática en el país.
+        </p>
       </div>
       {/* <!-- section 3 --> */}
       <div className="section-3 d-flex flex-column justify-content-center align-items-center px-5">
         <div>
-          <h2 className="text-center text-light">Sobre Nosotros</h2>
-          <p className="text-center text-light">
+          <h2 className="text-center text-light" data-aos="fade-left">
+            Sobre Nosotros
+          </h2>
+          <p className="text-center text-light" data-aos="fade-left">
             Creemos en que la educación es el pilar fundamental para el
             desarrollo y la solución de los problemas sociales del país, por eso
             Legal Work es una plataforma informativa que busca asesorarte sobre
@@ -167,8 +183,11 @@ const Home = () => {
           <br />
         </div>
         <div className="section-3-2 d-flex justify-content-evenly aling-items-center text-center">
-          <div className="px-4 d-flex flex-column justify-content-center aling-items-center cards">
-            <div className="div-img">
+          <div
+            className="px-4 d-flex flex-column justify-content-center aling-items-center cards"
+            data-aos="zoom-in"
+          >
+            <div className="div-img" data-aos="flip-left">
               <Link to="#">
                 <img
                   className="img-card"
@@ -183,8 +202,11 @@ const Home = () => {
               los hagas cumplir conforme a la norma.
             </p>
           </div>
-          <div className="px-4 d-flex flex-column justify-content-center aling-items-center cards mx-5">
-            <div className="div-img">
+          <div
+            className="px-4 d-flex flex-column justify-content-center aling-items-center cards mx-5"
+            data-aos="zoom-in"
+          >
+            <div className="div-img" data-aos="flip-left">
               <Link to="#">
                 <img
                   className="img-card"
@@ -200,8 +222,11 @@ const Home = () => {
             </p>
           </div>
 
-          <div className="px-4 d-flex flex-column justify-content-center aling-items-center cards">
-            <div className="div-img">
+          <div
+            className="px-4 d-flex flex-column justify-content-center aling-items-center cards"
+            data-aos="zoom-in"
+          >
+            <div className="div-img" data-aos="flip-left">
               <Link to="#">
                 <img
                   className="img-card"
@@ -221,12 +246,14 @@ const Home = () => {
       {/* <!-- section 4 --> */}
       <div className="section-4 d-flex flex-column justify-content-center align-items-center px-5">
         <div>
-          <h2 className="text-center">Tributación</h2>
+          <h2 className="text-center" data-aos="fade-left">
+            Tributación
+          </h2>
           <br />
         </div>
         <div className="section4-2 d-flex justify-content-evenly">
           <div className="section4-a py-5">
-            <p className="text-left">
+            <p className="text-left" data-aos="fade-left">
               Los impuestos o tributos son un pago sin contraprestación pero
               generalmente esperamos algún beneficio indirecto. En la mayoría de
               los países modernos, los ciudadanos pagan impuestos al gobierno
@@ -238,6 +265,7 @@ const Home = () => {
           <div className="section4-b d-flex justify-content-center align-items-center">
             <img
               className="img-section4"
+              data-aos="zoom-in"
               src="/assets/img/money-bag.png"
               alt="tributacion"
             />
