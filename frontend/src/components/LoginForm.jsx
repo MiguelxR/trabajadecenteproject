@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import seguridadAPI from "../utils/seguridadAPI";
+import "../css/Register-Login.css";
+import { dinamicTitle } from "../utils/dinamicTitle";
 
 const LoginForm = () => {
+  dinamicTitle("Login");
   const [usuario, setUsuario] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
@@ -18,6 +21,7 @@ const LoginForm = () => {
       .then((res) => {
         console.log(res);
         sessionStorage.setItem("id", res.data.id_user);
+        sessionStorage.setItem("token", res.data.Password);
         navigate("/contact");
       })
       .catch((error) => console.log(error));

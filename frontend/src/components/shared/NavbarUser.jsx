@@ -1,5 +1,6 @@
 import React from "react";
-
+import "../../css/navbarUser.css";
+import SidebarPrueba from "./SidebarPrueba";
 const NavbarUser = () => {
   return (
     <div>
@@ -12,6 +13,7 @@ const NavbarUser = () => {
           </div>
         </div>
         <div className="w-25 h-100 d-flex justify-content-center align-items-center">
+          <SidebarPrueba></SidebarPrueba>
           <img
             className="w-100 h-100"
             src="/assets/img/perfil.svg"

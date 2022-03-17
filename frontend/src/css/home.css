@@ -1,0 +1,115 @@
+/* Start Home */
+/* Start Section 1 */
+.section1 {
+  height: 600px;
+}
+.font-sect-1 {
+  font-weight: 900;
+  color: #ffffff;
+  /* text-shadow: 1px 1px 3px #ffffff; */
+  text-shadow: 0.1em 0.25em 0.2em rgb(0, 0, 0);
+}
+.imagen {
+  background-position: center;
+  background: url(/public/assets/img/factory-workers2.jpg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+.decoration {
+  height: 100px;
+  width: 100%;
+  background-color: #070d18;
+}
+
+.imgCarousel {
+  filter: brightness(50%);
+}
+
+.title-Carousel {
+  margin-bottom: 150px;
+  font-weight: 500;
+  font-size: 41px;
+  font-family: "Spline Sans", sans-serif;
+  color: white;
+}
+
+.text-Carousel {
+  font-family: "Spline Sans", sans-serif;
+  font-size: 27px;
+  margin-bottom: 100px;
+  color: rgb(66, 189, 236);
+}
+/* End Section 1 */
+
+/* Star Section 2 */
+.section-2 {
+  height: 690px;
+  position: relative;
+}
+.section2-a {
+  width: 50%;
+  height: 200px;
+  padding-right: 20px;
+}
+.section2-b {
+  width: 50%;
+  height: 200px;
+  padding-left: 20px;
+}
+.img-desafio {
+  height: 250px;
+  width: 400px;
+  margin-left: 60px;
+}
+/* End Section 2 */
+
+/* Star Section 3 */
+.section-3 {
+  height: 500px;
+  width: 100%;
+  background-color: #070d18;
+}
+.img-card {
+  height: 100%;
+}
+.section-3-2 {
+  height: 50%;
+  width: 100%;
+}
+.cards {
+  height: 100%;
+  width: 25%;
+  background-color: white;
+  border-radius: 20px;
+}
+.div-img {
+  height: 40%;
+  padding: 5px;
+}
+/* End Section 3 */
+
+/* Start Section 4 */
+.section-4 {
+  height: 500px;
+  width: 100%;
+}
+.section-4-2 {
+  height: 50%;
+  width: 100%;
+}
+.section4-a {
+  width: 50%;
+  height: 300px;
+  padding-right: 40px;
+}
+.section4-b {
+  width: 50%;
+  height: 300px;
+  padding-left: 20px;
+}
+.img-section4 {
+  height: 100%;
+  width: 70%;
+}
+/* End Section 4 */
+/* End Home */

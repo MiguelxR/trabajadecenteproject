@@ -1,0 +1,34 @@
+/* Start Navbar */
+.sect-navbar {
+  background-color: #070d18;
+  height: 80px;
+}
+.botones-nav {
+  height: 35px;
+  border: none;
+  background-color: #070d18;
+  /* transition: all 300ms; */
+  position: relative;
+}
+.botones-nav::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: aqua;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  transition: all 500ms;
+}
+.botones-nav:hover::before {
+  width: 100%;
+}
+.home {
+  /* min-height: 100vh; */
+  min-height: 100vh;
+}
+.heigth-img {
+  height: 60px;
+}
+/* End Navbar */

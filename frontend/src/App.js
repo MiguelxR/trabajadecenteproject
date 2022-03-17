@@ -6,17 +6,10 @@ import RegisterForm from "./components/RegisterForm";
 import LoginForm from "./components/LoginForm";
 import Profile from "./pages/Profile";
 import LayoutUser from "./components/shared/LayoutUser";
-import Contactform from "./pages/contact/Contactform";
-import SocialCalculator from "./pages/calculator/SocialCalculator";
-// import localAPI from "./utils/localAPI";
+import Contactform from "./pages/Contactform";
+import Politics from "./pages/Politics";
 
 function App() {
-  // const prueba = () => {
-  //   localAPI
-  //     .get("api/categories")
-  //     .then((res) => console.log(res))
-  //     .catch((error) => console.log(error));
-  // };
   return (
     <BrowserRouter>
       <Routes>
@@ -24,12 +17,14 @@ function App() {
           <Route index element={<Home></Home>}></Route>
         </Route>
         <Route path="/register" element={<RegisterForm></RegisterForm>}></Route>
-        <Route path="/socialCalculator" element={<SocialCalculator></SocialCalculator>}></Route>
         <Route path="/login" element={<LoginForm></LoginForm>}></Route>
         <Route path="/profile" element={<LayoutUser></LayoutUser>}>
           <Route index element={<Profile></Profile>}></Route>
         </Route>
         <Route path="/contact" element={<Contactform></Contactform>}></Route>
+        <Route path="/" element={<Layout></Layout>}>
+          <Route path="politics" element={<Politics />}></Route>
+        </Route>
       </Routes>
     </BrowserRouter>
   );

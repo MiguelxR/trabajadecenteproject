@@ -1,0 +1,42 @@
+/* Start Sidebar */
+.sidebar {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 20vw;
+  height: 100vh;
+  background-color: #42bdec;
+}
+.sidebar-logo {
+  width: 100%;
+  height: 75px;
+  background-color: #ffffff;
+}
+.ops-sidebar {
+  height: 75px;
+  border-bottom: 1px solid white;
+  transition: all 600ms;
+}
+.ops-sidebar-cerrar {
+  height: 75px;
+  /* border-bottom: 1px solid white; */
+  transition: all 500ms;
+}
+.ops-sidebar:hover {
+  transition: all 600ms;
+  color: #070d18;
+  background-color: #9a9a9a;
+}
+.ops-sidebar-cerrar:hover {
+  transition: all 500ms;
+  color: white;
+  background-color: #070d18;
+}
+.iconos-sidebar {
+  font-size: 35px;
+}
+.cerrar-sesion {
+  position: absolute;
+  bottom: 0;
+}
+/* End Sidebar */

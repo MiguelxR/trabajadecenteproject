@@ -83,7 +83,7 @@ const FooterUser = () => {
               <nav>
                 <ul>
                   <li>
-                    <a href="#" id="footer-hover2">
+                    <a href="*" id="footer-hover2">
                       <i className="fa fa-twitter "></i> <b>Get Shit Done</b>{" "}
                       The best kit in the market is here, just give it a try and
                       let us...
@@ -91,7 +91,7 @@ const FooterUser = () => {
                   </li>
                   <hr className="hr-small" />
                   <li>
-                    <a href="#" id="footer-hover2">
+                    <a href="*" id="footer-hover2">
                       <i className="fa fa-twitter"></i> We've just been featured
                       on <b> Awwwards Website</b>! Thank you everybody for...
                     </a>
@@ -107,7 +107,7 @@ const FooterUser = () => {
                 <ul>
                   <li>
                     <a
-                      href="#"
+                      href="*"
                       className="btn btn-social btn-facebook btn-simple footer-hover"
                     >
                       <i className="fa fa-facebook-square"></i> Facebook
@@ -115,7 +115,7 @@ const FooterUser = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="*"
                       className="btn btn-social btn-dribbble btn-simple footer-hover"
                     >
                       <i className="fa fa-dribbble"></i> Dribbble
@@ -123,7 +123,7 @@ const FooterUser = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="*"
                       className="btn btn-social btn-twitter btn-simple footer-hover"
                     >
                       <i className="fa fa-twitter"></i> Twitter
@@ -131,7 +131,7 @@ const FooterUser = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="*"
                       className="btn btn-social btn-reddit btn-simple footer-hover"
                     >
                       <i className="fa fa-google-plus-square"></i> Google+

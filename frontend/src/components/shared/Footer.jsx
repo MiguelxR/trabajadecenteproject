@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import "../../css/footer.css";
 const Footer = () => {
   return (
     <footer
@@ -9,15 +9,19 @@ const Footer = () => {
     >
       <div className="container ">
         <div className="row justify-content-evenly">
-          <div className="col-md-2 col-sm-3">
+          <div
+            className="col-md-2 col-sm-3"
+            data-aos="fade-left"
+            data-aos-duration="2500"
+          >
             <div className="info">
               <h5 className="title">Company</h5>
               <nav>
                 <ul>
                   <li>
-                    <Link to="/" id="footer-hover2">
+                    <a href="/" id="footer-hover2">
                       Home
-                    </Link>
+                    </a>
                   </li>
                   <li>
                     <Link to="#" id="footer-hover2">
@@ -43,7 +47,11 @@ const Footer = () => {
               </nav>
             </div>
           </div>
-          <div className="col-md-2 col-md-offset-1 col-sm-3">
+          <div
+            className="col-md-2 col-md-offset-1 col-sm-3 "
+            data-aos="fade-left"
+            data-aos-duration="2500"
+          >
             <div className="info">
               <h5 className="title"> Help and Support</h5>
               <nav>
@@ -59,12 +67,12 @@ const Footer = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link to="#" id="footer-hover2">
+                    <a href="/politics" id="footer-hover2">
                       Terms &amp; Conditions
-                    </Link>
+                    </a>
                   </li>
                   <li>
-                    <Link to="#" id="footer-hover2">
+                    <Link to="/politics" id="footer-hover2">
                       Company Policy
                     </Link>
                   </li>
@@ -77,13 +85,17 @@ const Footer = () => {
               </nav>
             </div>
           </div>
-          <div className="col-md-3 col-sm-3">
+          <div
+            className="col-md-3 col-sm-3"
+            data-aos="fade-left"
+            data-aos-duration="2500"
+          >
             <div className="info">
               <h5 className="title">Latest News</h5>
               <nav>
                 <ul>
                   <li>
-                    <a href="#" id="footer-hover2">
+                    <a href="*" id="footer-hover2">
                       <i className="fa fa-twitter "></i> <b>Get Shit Done</b>{" "}
                       The best kit in the market is here, just give it a try and
                       let us...
@@ -91,7 +103,7 @@ const Footer = () => {
                   </li>
                   <hr className="hr-small" />
                   <li>
-                    <a href="#" id="footer-hover2">
+                    <a href="*" id="footer-hover2">
                       <i className="fa fa-twitter"></i> We've just been featured
                       on <b> Awwwards Website</b>! Thank you everybody for...
                     </a>
@@ -100,14 +112,18 @@ const Footer = () => {
               </nav>
             </div>
           </div>
-          <div className="col-md-2 col-md-offset-1 col-sm-3">
+          <div
+            className="col-md-2 col-md-offset-1 col-sm-3"
+            data-aos="fade-left"
+            data-aos-duration="2500"
+          >
             <div className="info">
               <h5 className="title">Follow us on</h5>
               <nav>
                 <ul>
                   <li>
                     <a
-                      href="#"
+                      href="*"
                       className="btn btn-social btn-facebook btn-simple footer-hover"
                     >
                       <i className="fa fa-facebook-square"></i> Facebook
@@ -115,7 +131,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="*"
                       className="btn btn-social btn-dribbble btn-simple footer-hover"
                     >
                       <i className="fa fa-dribbble"></i> Dribbble
@@ -123,7 +139,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="*"
                       className="btn btn-social btn-twitter btn-simple footer-hover"
                     >
                       <i className="fa fa-twitter"></i> Twitter
@@ -131,7 +147,7 @@ const Footer = () => {
                   </li>
                   <li>
                     <a
-                      href="#"
+                      href="*"
                       className="btn btn-social btn-reddit btn-simple footer-hover"
                     >
                       <i className="fa fa-google-plus-square"></i> Google+
