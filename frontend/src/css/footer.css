@@ -1,12 +1,14 @@
 /* Star Footer */
 .footer {
-  position: relative;
-  bottom: 0;
+  position: absolute;
+  bottom: 1;
   width: 100%;
   background-color: #ffffff;
   line-height: 20px;
   border-top: 1px solid #dddddd;
   overflow: hidden;
+  margin-top: 1px;
+  height: 500px;
 }
 .footer nav > ul {
   list-style: none;

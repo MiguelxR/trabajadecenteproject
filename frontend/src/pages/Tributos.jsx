@@ -6,7 +6,7 @@ const Tributos = () => {
   return (
     <div className="perfil px-4 py-2">
       <div>
-        <header>
+        {/* <header>
           <div className="container">
             <div className="seccion_uno">
               <div className="titulo">
@@ -15,12 +15,12 @@ const Tributos = () => {
                   TRIBUTARIOS
                 </h1>
               </div>
-              <div className="imagen">
-                {/* <img src="img/deberes.jpg" alt="Cargando..." /> */}
-              </div>
+              <div className="imagen"> */}
+        {/* <img src="img/deberes.jpg" alt="Cargando..." /> */}
+        {/* </div>
             </div>
           </div>
-        </header>
+        </header> */}
         <div className="contenido">
           <p>
             La tributación puede referirse al acto de pagar tributos, así como

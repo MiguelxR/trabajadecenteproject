@@ -6,18 +6,18 @@ const Sunafil = () => {
   return (
     <div className="perfil px-4 py-2">
       <div>
-        <header>
+        {/* <header>
           <div className="container">
             <div className="seccion_uno">
               <div className="titulo">
                 <h1 className="title">SUNAFIL</h1>
               </div>
-              <div className="imagen">
-                {/* <img src="img/sunafil.jpg" alt="Cargando..." /> */}
-              </div>
+              <div className="imagen"> */}
+        {/* <img src="img/sunafil.jpg" alt="Cargando..." /> */}
+        {/* </div>
             </div>
           </div>
-        </header>
+        </header> */}
         <div className="contenido">
           <p>
             La Superintendencia Nacional de Fiscalización Laboral (SUNAFIL) es

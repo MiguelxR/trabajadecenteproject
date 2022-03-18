@@ -4,7 +4,7 @@
   top: 0;
   left: 0;
   width: 20vw;
-  height: 100vh;
+  height: 3700px;
   background-color: #42bdec;
 }
 .sidebar-logo {
@@ -36,7 +36,7 @@
   font-size: 35px;
 }
 .cerrar-sesion {
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 /* End Sidebar */

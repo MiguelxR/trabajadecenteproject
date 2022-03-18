@@ -1,4 +1,4 @@
-/* .container {
+.container {
   width: 100%;
   max-width: 1970px;
 }
@@ -14,7 +14,9 @@
 header {
   background-color: #070d18;
   height: 324px;
-  width: 100%;
+  width: 100vw;
+  position: absolute;
+  right: 25px;
 }
 .title {
   display: inline-block;
@@ -60,7 +62,7 @@ ul {
   margin-left: 50px;
 }
 footer {
-  background-color: #050b17;
+  background-color: #a2a7b3;
   height: 400px;
   width: 100%;
 }
@@ -96,4 +98,4 @@ footer {
   ul {
     margin-left: 25px;
   }
-} */
+}

@@ -1,12 +1,13 @@
 import React from "react";
 import { dinamicTitle } from "../utils/dinamicTitle";
-// import "../css/ComponetsMix.css";
+import "../css/ComponetsMix.css";
+
 const Derechos = () => {
   dinamicTitle("Derechos");
   return (
     <div className="perfil px-4 py-2">
       <div>
-        <header>
+        {/* <header>
           <div className="container">
             <div className="seccion_uno">
               <div className="titulo">
@@ -17,10 +18,10 @@ const Derechos = () => {
               </div>
               <div className="imagen">
                 {/* <img src="img/derechos.jpg" alt="cargando" /> */}
-              </div>
+        {/* </div>
             </div>
           </div>
-        </header>
+        </header> */}
         <div className="contenido">
           <p>
             Los derechos del trabajador o derechos laborales son un conjunto de
@@ -70,7 +71,7 @@ const Derechos = () => {
             <li>Tiempo de vigencia del contrato</li>
             <li>Otros aspectos.</li>
           </ul>
-          {/* <h4>¿Cómo se acredita la existencia de un contrato laboral?</h4>
+          <h4>¿Cómo se acredita la existencia de un contrato laboral?</h4>
           <p>
             Cualquier comunicación entre trabajador y empleador sobre temas
             laborales puede servir para acreditar la existencia de una relación
@@ -164,7 +165,7 @@ const Derechos = () => {
             tienen 4 años para exigir el pago de beneficios sociales y
             remuneraciones de devengados. Estos deben ser computados desde el
             cese de la relación laboral
-          </p> */}
+          </p>
         </div>
         <footer>
           <div className="container"></div>

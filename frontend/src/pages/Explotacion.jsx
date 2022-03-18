@@ -6,18 +6,18 @@ const Explotacion = () => {
   return (
     <div className="perfil px-4 py-2">
       <div>
-        <header>
+        {/* <header>
           <div className="container">
             <div className="seccion_uno">
               <div className="titulo">
                 <h1 className="titulo">EXPLOTACION LABORAL E INFORMALIDAD</h1>
               </div>
-              <div className="imagen">
-                {/* <img src="img/explotacion.jpg" alt="cargando..." /> */}
-              </div>
+              <div className="imagen"> */}
+        {/* <img src="img/explotacion.jpg" alt="cargando..." /> */}
+        {/* </div>
             </div>
           </div>
-        </header>
+        </header> */}
         <div className="contenido">
           <p>
             En el Perú no hay cifras exactas de la explotación laboral debido a

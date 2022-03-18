@@ -55,7 +55,7 @@ const NavbarUser = () => {
             </div>
           )}
 
-          <div className="d-flex">
+          {/* <div className="d-flex">
             <p className="m-0">usuario:</p>
             {perfil.map((user, index) => {
               return (
@@ -64,7 +64,7 @@ const NavbarUser = () => {
                 </div>
               );
             })}
-          </div>
+          </div> */}
         </div>
         <div className="w-25 h-100 d-flex justify-content-center align-items-center">
           {/* <SidebarPrueba></SidebarPrueba> */}
