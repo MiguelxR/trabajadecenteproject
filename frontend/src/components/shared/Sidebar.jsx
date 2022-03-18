@@ -15,44 +15,63 @@ const Sidebar = () => {
         </h5>
       </div>
       <ul className="w-100 m-0 p-0 text-light">
-        <Link to="/" className="text-light">
+        <Link to="/tools/explotation" className="text-light">
           <li className="w-100 ops-sidebar px-3 d-flex align-items-center  ">
             <div className="w-25 h-100 d-flex justify-content-center align-items-center ">
               <i className="fa-solid fa-house-chimney iconos-sidebar"></i>
             </div>
-            <h6 className="m-0 mx-2">Inicio</h6>
+            <h6 className="m-0 mx-2">Inicio/Herramientas </h6>
           </li>
         </Link>
-        <li className="w-100 ops-sidebar px-3 d-flex align-items-center ">
-          <div className="w-25 h-100 d-flex justify-content-center align-items-center ">
-            <i className="fa-solid fa-gavel iconos-sidebar"></i>
-          </div>
-          <h6 className="m-0 mx-2">Derecho Laboral</h6>
-        </li>
-        <li className="w-100 ops-sidebar px-3 d-flex align-items-center ">
-          <div className="w-25 h-100 d-flex justify-content-center align-items-center ">
-            <i className="fa-solid fa-file-invoice-dollar iconos-sidebar"></i>
-          </div>
-          <h6 className="m-0 mx-2">Tributacion</h6>
-        </li>
-        <li className="w-100 ops-sidebar px-3 d-flex align-items-center ">
-          <div className="w-25 h-100 d-flex justify-content-center align-items-center ">
-            <i className="fa-solid fa-calculator iconos-sidebar"></i>
-          </div>
-          <h6 className="m-0 mx-2">Calculadoras</h6>
-        </li>
-        <li className="w-100 ops-sidebar px-3 d-flex align-items-center ">
-          <div className="w-25 h-100 d-flex justify-content-center align-items-center ">
-            <i className="fa-solid fa-building-columns iconos-sidebar"></i>
-          </div>
-          <h6 className="m-0 mx-2">SUNAFIL</h6>
-        </li>
-        <li className="w-100 ops-sidebar px-3 d-flex align-items-center ">
-          <div className="w-25 h-100 d-flex justify-content-center align-items-center ">
-            <i className="fa-solid fa-user iconos-sidebar"></i>
-          </div>
-          <h6 className="m-0 mx-2">Perfil</h6>
-        </li>
+        <Link to="/tools/Derechos" className="text-light">
+          <li className="w-100 ops-sidebar px-3 d-flex align-items-center ">
+            <div className="w-25 h-100 d-flex justify-content-center align-items-center ">
+              <i className="fa-solid fa-gavel iconos-sidebar"></i>
+            </div>
+            <h6 className="m-0 mx-2">Derecho Laboral</h6>
+          </li>
+        </Link>
+        <Link to="/tools/tributos" className="text-light">
+          <li className="w-100 ops-sidebar px-3 d-flex align-items-center ">
+            <div className="w-25 h-100 d-flex justify-content-center align-items-center ">
+              <i className="fa-solid fa-file-invoice-dollar iconos-sidebar"></i>
+            </div>
+            <h6 className="m-0 mx-2">Tributacion</h6>
+          </li>
+        </Link>
+        <Link to="/tools/sunafil" className="text-light">
+          <li className="w-100 ops-sidebar px-3 d-flex align-items-center ">
+            <div className="w-25 h-100 d-flex justify-content-center align-items-center ">
+              <i className="fa-solid fa-building-columns iconos-sidebar"></i>
+            </div>
+            <h6 className="m-0 mx-2">SUNAFIL</h6>
+          </li>
+        </Link>
+        <Link to="/tools/calculators" className="text-light">
+          <li className="w-100 ops-sidebar px-3 d-flex align-items-center ">
+            <div className="w-25 h-100 d-flex justify-content-center align-items-center ">
+              <i className="fa-solid fa-calculator iconos-sidebar"></i>
+            </div>
+            <h6 className="m-0 mx-2">Calculadoras</h6>
+          </li>
+        </Link>
+        <Link to="/tools/consult" className="text-light">
+          <li className="w-100 ops-sidebar px-3 d-flex align-items-center ">
+            <div className="w-25 h-100 d-flex justify-content-center align-items-center ">
+              <i className="fa-solid fa-address-book iconos-sidebar"></i>
+              {/* <i class="fa-solid fa-address-book"></i> */}
+            </div>
+            <h6 className="m-0 mx-2">Asesoria</h6>
+          </li>
+        </Link>
+        <Link to="/tools/profile" className="text-light">
+          <li className="w-100 ops-sidebar px-3 d-flex align-items-center ">
+            <div className="w-25 h-100 d-flex justify-content-center align-items-center ">
+              <i className="fa-solid fa-user iconos-sidebar"></i>
+            </div>
+            <h6 className="m-0 mx-2">Perfil</h6>
+          </li>
+        </Link>
       </ul>
       <Link to="/" className="text-light" onClick={cerrarSesion}>
         <div className="cerrar-sesion w-100 m-0 p-0">

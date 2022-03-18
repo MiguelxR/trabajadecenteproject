@@ -32,14 +32,8 @@ const Contactform = () => {
   };
 
   return (
-    <div id="body">
+    <div id="body" className="perfil px-4 py-2">
       {/* header y navbar lateral */}
-      <header
-        style={{ backgroundColor: "rgb(66, 189, 236, 1)" }}
-        className="sticky-top navbar-derechos logo"
-      >
-        <SidebarPrueba></SidebarPrueba>
-      </header>
       {/* parrafo explicativo */}
       <div className="container m-4">
         <div className="container">
@@ -120,11 +114,11 @@ const Contactform = () => {
               {/* section 5 */}
               <div className="footer-container" />
               {/* footer Copyright */}
-              <footer>
+              {/* <footer>
                 <div className="footer-vertical color-base d-flex align-items-center justify-content-center text-light logo ">
                   <h5>© Copyright ©2022 All rights reserved LegalWork</h5>
                 </div>
-              </footer>
+              </footer> */}
             </h2>
           </div>
         </div>
