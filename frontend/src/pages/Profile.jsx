@@ -42,13 +42,13 @@ const Profile = () => {
               </div>
               <div className="w-50 px-5 py-3 d-flex">
                 <p className="m-0 mx-2">Edad:</p>
-                <p className="m-0 mx-3 color-datos">{filtro.Edad}</p>
+                <p className="m-0 mx-3 color-datos">21</p>
               </div>
             </div>
             <div className="d-flex align-items-center">
               <div className="w-50 px-5 py-3 d-flex">
                 <p className="m-0 mx-2">Profesion:</p>
-                <p className="m-0 mx-3 color-datos">{filtro.Profesion}</p>
+                <p className="m-0 mx-3 color-datos">Programador Fullstack</p>
               </div>
               <div className="w-50 px-5 py-3 d-flex">
                 <p className="m-0 mx-2">Estudios:</p>

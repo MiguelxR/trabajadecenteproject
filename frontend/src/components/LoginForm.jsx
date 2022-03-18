@@ -22,7 +22,7 @@ const LoginForm = () => {
         console.log(res);
         sessionStorage.setItem("id", res.data.id_user);
         sessionStorage.setItem("token", res.data.Password);
-        navigate("/contact");
+        navigate("/tools/explotation");
       })
       .catch((error) => console.log(error));
   };

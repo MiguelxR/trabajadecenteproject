@@ -33,7 +33,7 @@ const Navbar = () => {
         </Link>
         {sessionStorage.getItem("token") ? (
           <div>
-            <Link to="/profile">
+            <Link to="/tools/explotation">
               <button className="text-light botones-nav mx-1">
                 Herramientas
               </button>
